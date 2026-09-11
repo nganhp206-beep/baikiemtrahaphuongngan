@@ -1,14 +1,15 @@
-// Bai 1
 <?php
+// --- Bài 1 ---
+echo "// Bài 1 <br>";
 echo "Các số chẵn từ 1 đến 10 là: ";
 for ($i = 2; $i <= 10; $i += 2) {
     echo $i . " ";
 }
-?>
+echo "<br><br>";
 
-// Bai 2
-<?php
-function ktrasonguyento($n) {
+// --- Bài 2 ---
+echo "// Bài 2 <br>";
+function ktsonguyento($n) {
     if ($n < 2) {
         return false;
     }
@@ -20,22 +21,22 @@ function ktrasonguyento($n) {
     return true;
 }
 
-$so = 29;
-if (ktrasonguyento($so)) {
+$so = 29; 
+if (ktsonguyento($so)) {
     echo $so . " là số nguyên tố.";
 } else {
     echo $so . " không phải là số nguyên tố.";
 }
-?>
+echo "<br><br>";
 
-// Bai 3
-<?php
+// --- Bài 3 ---
+echo "// Bài 3 <br>";
 function inHinhChuNhat($chieuRong, $chieuCao) {
-    for ($dong = 1; $dong <= $chieuCao; $dong++) {
-        for ($cot = 1; $cot <= $chieuRong; $cot++) {
-            echo "*";
+    for ($i = 0; $i < $chieuCao; $i++) {
+        for ($j = 0; $j < $chieuRong; $j++) {
+            echo "* ";
         }
-        echo "\n";
+        echo "<br>"; 
     }
 }
 
